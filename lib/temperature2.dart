@@ -74,6 +74,8 @@ class _temperatureState extends State<temperature> {
         else if (to == 'Kelvin') {
           result = (value + 273.15);
         }
+        else
+          result = value;
       }
       else if (from == 'Kelvin') {
         if (to == '°C') {
@@ -82,6 +84,8 @@ class _temperatureState extends State<temperature> {
         else if (to == '°F') {
           result = (1.8) * (value - 273.15) + 32;
         }
+        else
+          result = value;
       }
       else if (from == '°F') {
         if (to == '°C') {
@@ -90,6 +94,8 @@ class _temperatureState extends State<temperature> {
         else if (to == 'Kelvin') {
           result = ((value - 32) * 5 / 9) + 273.15;
         }
+        else
+          result = value;
       }
       resultText = '${userInput.toString()} $_startMeasures  --->  ${result
           .toString()} $_convertMeasures';
