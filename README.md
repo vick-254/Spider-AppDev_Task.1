@@ -1,6 +1,6 @@
 # unit_converter_spider
 
-A new Flutter project.
+A unit converter application with the option to verify different conversions as well.
 
 ## Getting Started
 
