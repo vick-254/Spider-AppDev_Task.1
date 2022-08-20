@@ -25,22 +25,7 @@ class _temperatureState extends State<temperature> {
     'Kelvin'
   ];
 
-  final Map<String,int> nameMapping
-  ={
-    'Metres':0,
-    'Kilometres':1,
-    'Miles':2,
-    'Feet':3,
-    'Inches':4
-  };
 
-  dynamic formulas ={
-    '0':[1,0.001,0.0006213,3.280,39.370],
-    '1':[1000,1,0.6213,3280.84,39370],
-    '2':[1609.34,1.60934,1,5280,63360],
-    '3':[0.0348,0.00030,0.000189,1,12],
-    '4':[0.0254,0.0000254,0.0000157,0.0833,1]
-  };
   void successToast() => Fluttertoast.showToast(
     msg:"Verifying...",
     fontSize: 18,
